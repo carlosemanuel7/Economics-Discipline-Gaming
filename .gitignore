@@ -1,4 +1,22 @@
+# Godot
+game/.godot/
+game/*.translation
+game/*.tmp
+
+# Arquivos compilados C++ (GDExtension)
+game/bin/*.so
+game/bin/*.dll
+game/bin/*.dylib
+game/bin/*.exp
+game/bin/*.lib
+
+# Build do CMake
 build/
-*.o
-*.exe
+CMakeCache.txt
+CMakeFiles/
+compile_commands.json
+
+# VS Code / OS
 .vscode/
+.DS_Store
+Thumbs.db
