@@ -1,37 +1,29 @@
 [gd_scene format=3 uid="uid://ce2m4whsp3qsg"]
 
 [ext_resource type="Script" uid="uid://c3uygec4h6xag" path="res://scripts/player.gd" id="1_rpcr7"]
-[ext_resource type="Texture2D" uid="uid://ba21iuvhn0wbk" path="res://sprites/8 - Orc/Idle_(64 x 32).png" id="2_hbkvy"]
+[ext_resource type="Texture2D" uid="uid://bvtw2sxxbc51" path="res://sprites/CLEBER FRENTE.png" id="2_hbkvy"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pomax"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ebhgt"]
 atlas = ExtResource("2_hbkvy")
-region = Rect2(256, 0, 64, 32)
+region = Rect2(0, 0, 800, 800)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_punbo"]
 atlas = ExtResource("2_hbkvy")
-region = Rect2(192, 0, 64, 32)
+region = Rect2(0, 800, 800, 800)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nqu1d"]
 atlas = ExtResource("2_hbkvy")
-region = Rect2(128, 0, 64, 32)
+region = Rect2(800, 0, 800, 800)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dv0bu"]
 atlas = ExtResource("2_hbkvy")
-region = Rect2(64, 0, 64, 32)
+region = Rect2(800, 800, 800, 800)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cm21i"]
 atlas = ExtResource("2_hbkvy")
-region = Rect2(0, 0, 64, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k51nl"]
-atlas = ExtResource("2_hbkvy")
-region = Rect2(320, 0, 64, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wxf8w"]
-atlas = ExtResource("2_hbkvy")
-region = Rect2(384, 0, 64, 32)
+region = Rect2(1600, 0, 800, 800)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dvqfx"]
 animations = [{
@@ -50,12 +42,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_cm21i")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k51nl")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wxf8w")
 }],
 "loop": 1,
 "name": &"idle",
@@ -69,8 +55,8 @@ script = ExtResource("1_rpcr7")
 position = Vector2(20, 27)
 shape = SubResource("CapsuleShape2D_pomax")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1330206819]
-position = Vector2(20, 25)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D" unique_id=1330206819]
+scale = Vector2(0.038359378, 0.038125)
 sprite_frames = SubResource("SpriteFrames_dvqfx")
 animation = &"idle"
 autoplay = "idle"

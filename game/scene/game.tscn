@@ -15,4 +15,4 @@ shape = SubResource("RectangleShape2D_pomax")
 debug_color = Color(0, 0.6457893, 0.2591559, 0.41960785)
 
 [node name="Player" parent="." unique_id=1809107676 instance=ExtResource("1_5kiuu")]
-position = Vector2(16, 4)
+position = Vector2(49, 44)
