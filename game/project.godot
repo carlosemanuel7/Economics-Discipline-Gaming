@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="New project game of economic"
-run/main_scene="uid://behpg5rqir7yt"
+run/main_scene="uid://bv2x400amw1en"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
